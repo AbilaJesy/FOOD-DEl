@@ -1,0 +1,141 @@
+.join-us-body {
+    background-color: #f0f0f5;
+    margin: 0;
+}
+
+.stepper {
+    display: flex;
+}
+
+.steps-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 40px 0px;
+    position: relative;
+}
+
+.progress-container {
+    position: relative;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.progress-line {
+    position: absolute;
+    width: 3px;
+    background: rgba(0, 128, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    transition: height 0.3s ease;
+}
+
+.steps-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.steps {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(255, 118, 27);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.steps.active {
+    background-color: green;
+    color: white;
+}
+
+.steps.completed {
+    background-color: green;
+}
+
+.steps.completed::after {
+    content: '✓';
+    font-size: 20px;
+    color: white;
+}
+
+.step-content {
+    flex: 2;
+    margin-left: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container2 {
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.congrats-message {
+    padding: 20px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    box-shadow: rgb(183, 183, 184) 4px 4px 12px;
+    margin: 40px 0px;
+}
+
+.step-btn-prev {
+    width: 20%;
+}
+
+.step-btn {
+    width: 20%;
+    float: right;
+}
+
+.step-btn:active {
+    background-color: green;
+}
+
+h3 {
+    color: rgb(112, 112, 112);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.res-details {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.res-details label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.res-details input[type="checkbox"] {
+    margin-right: 5px;
+}
